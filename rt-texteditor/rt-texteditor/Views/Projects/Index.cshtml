@@ -1,0 +1,54 @@
+﻿@model IEnumerable<rt_texteditor.Models.ProjectTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+<br />
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Create New Project", "Create")</li>
+        <li>@Html.ActionLink("Create New Task", "Create", "Tasks")</li>
+    </ul>
+</div>
+
+<h2>Current Projects</h2>
+
+<table class="table">
+    @*<tr>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th></th>
+    </tr>*@
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+                @foreach (var elem in item.TaskTables)
+                {
+                    <ul style="list-style-type:none">
+                        <li>&nbsp&nbsp&nbsp @Html.ActionLink(elem.title, "Create", "Code", new { id = elem.task_id }, null)</li>
+                    </ul>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.project_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.project_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.project_id })
+            </td>
+        </tr>
+    }
+
+</table>
