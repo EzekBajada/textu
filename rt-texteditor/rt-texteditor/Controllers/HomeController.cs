@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace rt_texteditor.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +27,7 @@ namespace rt_texteditor.Controllers
 
             return View();
         }
+
+        
     }
 }

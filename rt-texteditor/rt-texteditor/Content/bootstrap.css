@@ -314,7 +314,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: white;
   background-color: #ffffff;
 }
 
@@ -4152,7 +4152,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .container > .navbar-header,
   .container > .navbar-collapse {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: -50px;
   }
 }
 
@@ -4194,7 +4194,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 20px;
 }
 
@@ -4205,7 +4205,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
-    margin-left: -15px;
+    margin-left: 0px;
   }
 }
 
@@ -4399,7 +4399,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-text {
-  color: #777777;
+  color: yellow;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -4501,17 +4501,19 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+    background-color: rgba(0,0,0,0.5);
+
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: gold;
+  font-family: 'Niagara Engraved' ;
+  font-size: 55px;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+  color: gold;
   background-color: transparent;
 }
 
@@ -4520,12 +4522,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: white;
+  font-size: 22px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: lightgray;
   background-color: transparent;
 }
 
@@ -4928,18 +4931,18 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
+  padding: 5px;
   margin-bottom: 30px;
-  font-size: 21px;
+  font-size: 66;
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: red;
 }
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: yellow;
 }
 
 .jumbotron p {
@@ -4960,8 +4963,59 @@ a.list-group-item.active > .badge,
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 20px;
   }
+}
+.login {
+    background-color: white;
+    text-align: center;
+    color:white;
+}
+#home {
+    margin: 0;
+    background-image: url("http://www.casaforma.co.uk/images/gradient/large/casa-forma-gradient-078338600145323191219217541200.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome_page {
+   margin-left: 0px;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+.des h1 {
+    font-size: 40px;
+    color: greenyellow;
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-family: 'Lucida Console';
+}
+
+
+.welcome_page h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.slides{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    float: right;
+    float:left;
+    left:0;
+    right:0;
+    top:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+a.home-register{
+    color:blue
 }
 
 .thumbnail {

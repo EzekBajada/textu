@@ -54,9 +54,9 @@ namespace rt_texteditor
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+              appId: "128763357974423",
+              appSecret: "816f32ec60e0982afe4c7bcd1a4910ec");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
